@@ -11,9 +11,9 @@
 :root {
     --primary-color: #fcf5e9;
     --dark-color: #333333;
-    --wrapper-normal: 1100px;
-    --wrapper-wide: 1400px;
-    --wrapper-narrow: 900px;
+    --wrapper-normal: 68.75rem  /* 1100/16 */;
+    --wrapper-wide: 87.5rem  /* 1400/16 */;
+    --wrapper-narrow: 56.25rem  /* 900/16 */;
 }
 
 body {
@@ -65,13 +65,13 @@ img {
 .section-heading {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem  /* 40/16 */;
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    border: 1px solid #333333;
+    border: 0.0625rem  /* 1/16 */ solid #333333;
     background: transparent;
     font-family: inherit;
     font-size: inherit;
@@ -86,11 +86,11 @@ img {
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    height: 1px;
+    height: 0.0625rem  /* 1/16 */;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    width: 0.0625rem  /* 1/16 */;
 }
 
 /*Header*/
@@ -98,14 +98,14 @@ header {
     margin: 1.5rem auto;
 
     .logo {
-        width: 130px;
+        width: 8.125rem  /* 130/16 */;
     }
 
     .header-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (width < 768px) {
+        @media (width < 48rem  /* 768/16 */) {
             flex-direction: column;
             gap: 1.5rem;
         }
@@ -132,14 +132,14 @@ header {
 
 /*Home*/
 .hero {
-    height: 500px;
+    height: 31.25rem  /* 500/16 */;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    @media (width < 768px) {
-        /*height: 300px;*/
+    @media (width < 48rem  /* 768/16 */) {
+        /*height: 18.75rem  !* 300/16 *!;*/
     }
 
     h2 {
@@ -148,7 +148,7 @@ header {
         line-height: 1.4;
     }
 
-    @media (width < 768px) {
+    @media (width < 48rem  /* 768/16 */) {
         font-size: 1.8rem;
     }
 }
@@ -156,23 +156,23 @@ header {
 .gallery-flex {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem  /* 20/16 */;
     flex-wrap: wrap;
 
     .gallery-item {
-        width: calc(33.333% - 20px);
-        border-radius: 10px;
+        width: calc(33.333% - 1.25rem  /* 20/16 */);
+        border-radius: 0.625rem  /* 10/16 */;
 
         img {
-            border-radius: 10px;
+            border-radius: 0.625rem  /* 10/16 */;
         }
 
         &:hover {
             opacity: .9;
         }
 
-        @media (width < 768px) {
-            width: calc(50% - 20px);
+        @media (width < 48rem  /* 768/16 */) {
+            width: calc(50% - 1.25rem  /* 20/16 */);
         }
     }
 }
@@ -183,9 +183,9 @@ header {
 
     .services-flex {
         display: flex;
-        gap: 20px;
+        gap: 1.25rem  /* 20/16 */;
 
-        @media (width < 768px) {
+        @media (width < 48rem  /* 768/16 */) {
             flex-direction: column;
             gap: 1.5rem;
         }
@@ -204,13 +204,13 @@ header {
         display: flex;
         gap: 1.4rem;
 
-        @media (width < 768px) {
+        @media (width < 48rem  /* 768/16 */) {
             flex-direction: column;
             gap: 1.5rem;
         }
 
         img {
-            border-radius: 10px;
+            border-radius: 0.625rem  /* 10/16 */;
         }
     }
 }
@@ -230,7 +230,7 @@ header {
         input, textarea {
             width: 100%;
             border: 0;
-            border-block-end: 1px solid #333333;
+            border-block-end: 0.0625rem  /* 1/16 */ solid #333333;
             font-family: inherit;
             font-size: inherit;
             padding-block-end: 1rem;
@@ -248,14 +248,14 @@ header {
 
 .footer {
     margin-top: 2rem;
-    border-top: 1px solid #aaaaaa;
+    border-top: 0.0625rem  /* 1/16 */ solid #aaaaaa;
     padding: 2rem 1.5rem;
 
     .footer-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (width < 768px) {
+        @media (width < 48rem  /* 768/16 */) {
             flex-direction: column;
             gap: 1.5rem;
             text-align: center;
@@ -263,8 +263,8 @@ header {
     }
 
     img {
-        width: 120px;
-        height: 35px;
+        width: 7.5rem  /* 120/16 */;
+        height: 2.1875rem  /* 35/16 */;
     }
 
     h4 {
